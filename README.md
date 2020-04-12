@@ -42,7 +42,7 @@ AUTO_INCREMENT - increase id of primary key
 ```
 CREATE table()
 Example:
-CREATE TABLE shirts( shirt_id INT NOT NULL AUTO_INCREMENT, type VARCHAR(20) NOT NULL, color VARCHAR(20) NOT NULL, shirt_size INT NOT NULL, last_worn INT NOT NULL, PRIMARY KEY (shirt_id));
+CREATE TABLE shirts( shirt_id INT NOT NULL AUTO_INCREMENT, type VARCHAR(20) NOT NULL, color VARCHAR(20) NOT NULL, shirt_size VARCHAR(5) NOT NULL, last_worn INT NOT NULL, PRIMARY KEY (shirt_id));
 ```
 ```
 mysql> DESC shirts;
@@ -52,7 +52,7 @@ mysql> DESC shirts;
 | shirt_id   | int         | NO   | PRI | NULL    | auto_increment |
 | type       | varchar(20) | NO   |     | NULL    |                |
 | color      | varchar(20) | NO   |     | NULL    |                |
-| shirt_size | int         | NO   |     | NULL    |                |
+| shirt_size | varchar(5)  | NO   |     | NULL    |                |
 | last_worn  | int         | NO   |     | NULL    |                |
 +------------+-------------+------+-----+---------+----------------+
 ```
@@ -66,7 +66,7 @@ Key words: UPDATE / SET / WHERE
 ex: UPDATE cats SET name = ‘New’ WHERE name = ‘Old’;
 ```
 
-Delete:
+- Delete:
 ```
 DELETE - delete records
 ex: DELETE FROM cats WHERE name = ’Hello’;
