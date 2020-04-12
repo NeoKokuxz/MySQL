@@ -2,6 +2,11 @@
 MySQL Commands and test dbs
 
 ## Commands
+- Run SQL in terminal (Mac OS)
+```
+mysql -u root -p
+Enter Password*
+```
 - CREATE Database
 ```
 CREATE DATABASE <name>; - create
